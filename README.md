@@ -39,3 +39,11 @@ e: THe other variation is the selected input, which should have a blue border an
 f: Do not worry about making your project look nice on mobile, but DO resize your browser a little bit to make sure that it's not completely broken at different desktop resolutions
 
 g: Checking that the password fields match each other requires javascript. Try to implement this if you feel confident, otherwise validate each field seperately
+
+
+
+Media References:
+
+pokeball-background - jmanalog (Jay) - unsplash.com
+pokeball-logo - josemdelaa - pixabay.com
+  
