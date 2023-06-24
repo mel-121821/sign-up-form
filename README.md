@@ -46,4 +46,9 @@ Media References:
 
 pokeball-background - jmanalog (Jay) - unsplash.com
 pokeball-logo - josemdelaa - pixabay.com
-  
+
+
+
+Resources: 
+
+Border-box: https://www.w3schools.com/css/css3_box-sizing.asp 
