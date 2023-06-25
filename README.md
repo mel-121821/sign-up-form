@@ -45,7 +45,15 @@ g: Checking that the password fields match each other requires javascript. Try t
 Media References:
 
 pokeball-background - jmanalog (Jay) - unsplash.com
-pokeball-logo - josemdelaa - pixabay.com
+
+pokeball-logo.webp and pokeball-logo.png - josemdelaa - pixabay.com
+
+pokeball-logo3 - pokemon by Oh Rian - thenounproject.com
+
+pokeball-logo4 - pokemon by Andrianxia - thenounproject.com
+
+pikachusvg.svg and pikachu-logo.png - by Tiffany - https://freesvgs.com/index.php/2021/06/03/pikachu-free-svg-file/
+
 
 
 
