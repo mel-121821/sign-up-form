@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: norsebold;
-    src: url('fonts/Norse-Bold.otf');
+    font-family: pokemon-hollow;
+    src: url('fonts/pokemon/pokemon-hollow.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -48,8 +48,40 @@ p {
     min-width: 40%;
     min-height: 100vh;
     position: relative;
-    background-color: white;
+    background-image: url('img/pokeball-background.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
 }
+
+.title {
+    margin-top: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+.title h1 {
+    font-family: 'pokemon-hollow', sans-serif;
+    font-size: 2.2rem;
+    color: white;
+    letter-spacing: 0.15em;
+    
+}
+
+
+
+img {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 10px;
+}
+
+
 
 .footer {
     position: absolute;
@@ -61,19 +93,25 @@ p {
     justify-content: center;
     width: 100%;
     padding: 10px 0px;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .footer div {
     text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
 }
 
 .form-section {
     background-color: white;
 }
 
-img {
-    max-width: 50px;
-}
+
 
 div {
     border: 1px solid gray;
