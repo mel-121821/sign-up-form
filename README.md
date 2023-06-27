@@ -59,6 +59,11 @@ pikachusvg.svg and pikachu-logo.png - by Tiffany - https://freesvgs.com/index.ph
 
 Resources: 
 
-Border-box: https://www.w3schools.com/css/css3_box-sizing.asp 
+Border-box: 
+https://www.w3schools.com/css/css3_box-sizing.asp 
 
-Color-inversion: https://www.w3docs.com/snippets/css/how-to-change-the-color-of-png-image-using-css.html
+Color-inversion: 
+https://www.w3docs.com/snippets/css/how-to-change-the-color-of-png-image-using-css.html
+
+Measuring the size of an element: 
+https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
