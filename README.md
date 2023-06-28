@@ -69,4 +69,11 @@ Measuring the size of an element:
 https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
 
 
-Problems with CSS width: https://stackoverflow.com/questions/14938428/why-would-max-width-not-work-on-this
+Problems with CSS width:
+https://stackoverflow.com/questions/14938428/why-would-max-width-not-work-on-this
+
+Using calc() for generative color palettes: 
+https://moderncss.dev/practical-uses-of-css-math-functions-calc-clamp-min-max/
+
+Media queries: 
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
