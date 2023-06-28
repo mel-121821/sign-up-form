@@ -77,3 +77,6 @@ https://moderncss.dev/practical-uses-of-css-math-functions-calc-clamp-min-max/
 
 Media queries: 
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+How to fill a hollow font: 
+https://stackoverflow.com/questions/4919076/outline-effect-to-text
