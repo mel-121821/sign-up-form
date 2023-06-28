@@ -113,18 +113,6 @@ img {
     background-color: white;
 }
 
-.element-size {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.element-size p {
-    font-size: 0.8rem;
-}
-
-
 div {
     border: 1px solid gray;
 }
