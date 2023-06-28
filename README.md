@@ -67,3 +67,6 @@ https://www.w3docs.com/snippets/css/how-to-change-the-color-of-png-image-using-c
 
 Measuring the size of an element: 
 https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+
+
+Problems with CSS width: https://stackoverflow.com/questions/14938428/why-would-max-width-not-work-on-this
