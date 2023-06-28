@@ -41,11 +41,13 @@ p {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    width: max(65%, 700px);
+    width: 100%;
+    max-width: max(70vw, 800px);
 }
 
 .sidebar {
-    min-width: 40%;
+    width: 100%;
+    max-width: max(25vw, 300px);
     min-height: 100vh;
     position: relative;
     background-image: url('img/pokeball-background.jpg');
@@ -61,30 +63,26 @@ p {
     align-items: center;
     flex-direction: row;
     background: rgba(0, 0, 0, 0.4);
-    
+}
+
+img {
+    left: 80px; 
+    max-width: 250px;
+    max-height: 250px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    margin: -60px -60px -60px -50px;
+  
 }
 
 .title h1 {
     font-family: 'pokemon-hollow', sans-serif;
-    font-size: 2.2rem;
+    font-size: max(calc(1.2rem + 1vw), 1.2rem);
     color: white;
     letter-spacing: 0.15em;
-    
+    margin-left: max(calc(0.2rem + 0.7vw), 1px);
+    padding-right: 30px;
 }
-
-
-
-img {
-    max-width: 250px;
-    max-height: 250px;
-    margin: 10px;
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
-    margin: -60px -40px -60px -50px;
-  
-}
-
-
 
 .footer {
     position: absolute;
@@ -115,13 +113,26 @@ img {
     background-color: white;
 }
 
+.element-size {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.element-size p {
+    font-size: 0.8rem;
+}
 
 
 div {
     border: 1px solid gray;
 }
 
-@media only screen and (max-width: 600px) {
+
+/*______________________________________________*/
+
+@media only screen and (max-width: 650px) {
     .content {
         flex-direction: column;
     }
