@@ -95,3 +95,9 @@ https://stackoverflow.com/questions/25205039/is-it-possible-to-get-a-negative-va
 
 More info on media queries:
 https://css-tricks.com/css-media-queries/#:~:text=You%20may%20use%20as%20many,alter%20the%20logic%20as%20well.
+
+Hiding part of a PNG image: 
+https://stackoverflow.com/questions/11092146/how-to-hide-part-of-the-image
+
+Link to open a new tab:
+https://html.com/attributes/a-target/#:~:text=browser%20specifies%20otherwise.-,a%20target%3D%E2%80%9D_blank%E2%80%9D%20Open%20in%20New%20Browser%20Tab%20(,older%20browsers)%20a%20new%20window.
