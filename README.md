@@ -80,3 +80,18 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 How to fill a hollow font: 
 https://stackoverflow.com/questions/4919076/outline-effect-to-text
+
+Changing the color of a PNG image:
+https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css
+
+Adding a border to a PNG image:
+https://stackoverflow.com/questions/12690444/css-border-on-png-image-with-transparent-parts
+
+Box-shadow:
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+Using calc to get a negative value: 
+https://stackoverflow.com/questions/25205039/is-it-possible-to-get-a-negative-value-with-css-calc
+
+More info on media queries:
+https://css-tricks.com/css-media-queries/#:~:text=You%20may%20use%20as%20many,alter%20the%20logic%20as%20well.
