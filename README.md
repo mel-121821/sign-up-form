@@ -55,6 +55,8 @@ pokeball-logo4 - pokemon by Andrianxia - thenounproject.com
 pikachusvg.svg and pikachu-logo.png - by Tiffany - https://freesvgs.com/index.php/2021/06/03/pikachu-free-svg-file/
 
 
+Tools: 
+https://coolors.co/image-picker
 
 
 Resources: 
