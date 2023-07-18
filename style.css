@@ -12,6 +12,7 @@
     --gray: hsla(173, 8%, 54%, 1);
     --gray-fade-light: hsla(173, 8%, 97%, 1);
     --gray-fade-medium: hsla(173, 6%, 80%, 1);
+    --gray-darkened: hsla(173, 6%, 40%, 1);
     --gray-2: hsla(173, 6%, 51%, 1);
     --gray-2-light: hsla(173, 6%, 90%, 1);
 }
@@ -144,14 +145,13 @@ img {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: max(calc(0.5rem + 0.7vw), 1.2rem);
     font-weight: 550;
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 .form-inputs {
@@ -160,34 +160,47 @@ p {
     border-bottom: 1px solid var(--gray-fade-medium);
     box-shadow: 0px 1px 2px 1px var(--gray-fade-medium);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-    padding: 10px;
+    color: var(--night);
+    padding: 10px 30px;
+    margin-bottom: 30px;
 }
 
 legend {
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px 0px 15px 0px;
-    font-size: 1.2rem;
+    font-size: max(calc(0.5rem + 0.7vw), 1.2rem);
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .form-row {
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
-   
-}
-
-label {
-    font-size: 0.8rem;
-    letter-spacing: -0.08em;
-    font-size: 0.7rem;
-    
+    justify-content: left;
 }
 
 .form-column {
     display: flex;
     flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 10px;
 }
+
+label {
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: var(--gray-darkened);
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border: 1px solid var(--gray-fade-medium);
+    padding: 3px;
+}
+
 
 
 
@@ -197,7 +210,7 @@ div {
 }
 
 
-/*______________________________________________*/
+/*_________________***Media Queries***___________________*/
 
 
 @media all and (max-width: 815px) and (min-width: 651px) {
@@ -227,6 +240,9 @@ div {
     }
 }
 
+/*______________________________________________*/
+
+
 @media only screen and (max-width: 650px) {
     .content {
         flex-direction: column;
@@ -250,6 +266,8 @@ div {
     }
 }
 
+/*______________________________________________*/
+
 
 @media only screen and (max-width: 485px) {
     
@@ -267,6 +285,9 @@ div {
     }
 }
 
+/*______________________________________________*/
+
+
 @media only screen and (max-width: 430px) {
     img {
         margin-left: -10px;
@@ -276,6 +297,9 @@ div {
         margin-left: 0px;
     }
 }
+
+/*______________________________________________*/
+
 
 @media only screen and (max-width: 400px) {
     img {
