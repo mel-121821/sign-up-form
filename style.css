@@ -177,12 +177,12 @@ legend {
     margin-bottom: 20px;
     display: flex;
     justify-content: left;
+    gap: 60px;
 }
 
 .form-column {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
     margin-bottom: 10px;
 }
 
@@ -198,7 +198,8 @@ input[type="email"],
 input[type="tel"],
 input[type="password"] {
     border: 1px solid var(--gray-fade-medium);
-    padding: 3px;
+    padding: 5px;
+    width: auto;
 }
 
 
@@ -235,8 +236,26 @@ div {
     
     .form-section {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
+    }
+
+    label {
+        font-size: 0.45rem;
+    }
+
+    .form-row {
+        gap: 30px;
+    }
+
+    .form-column {
+        width: calc(50% - 0.5rem);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+        width: 100%;
     }
 }
 
