@@ -147,13 +147,15 @@ img {
     gap: 20px;
 }
 
-
+.opening-para {
+    padding: 0px 30px;
+}
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: max(calc(0.5rem + 0.7vw), 1.2rem);
     font-weight: 550;
-    padding: 10px 30px;
+    margin-bottom: 20px;
 }
 
 .form-inputs {
@@ -239,6 +241,7 @@ div {
     .form-section {
         display: flex;
         flex-direction: column; 
+        gap: 10px;
     }
 
     label {
@@ -286,10 +289,19 @@ div {
         font-size: max(calc(1.2rem + 2vw), 1.2rem);
     }
 
+    .form-section {
+        gap: 10px;
+    }
+
     .opening-para {
         padding: 30px 0px 15px 0px;
         padding-left: max(8%, 40px);
         padding-right: max(8%, 40px);
+    }
+
+    p {
+        margin-bottom: 0px;
+        padding: 10px 0px;
     }
 
     .form-inputs {
