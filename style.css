@@ -147,7 +147,9 @@ img {
     gap: 20px;
 }
 
-.opening-para {
+.opening-para,
+.submit-section,
+.login {
     padding: 0px 30px;
 }
 
@@ -171,10 +173,17 @@ p {
 
 legend {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 15px 0px 15px 0px;
-    font-size: max(calc(0.5rem + 0.7vw), 1.2rem);
+    margin: 20px 0px 3px 0px;
+    font-size: max(calc(0.7rem + 0.7vw), 1.5rem);
     font-weight: 600;
-    margin-bottom: 20px;
+    
+}
+
+.para-required p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray-darkened); 
+    margin-bottom: 40px;
 }
 
 .form-row {
@@ -304,6 +313,11 @@ div {
         padding: 10px 0px;
     }
 
+    .para-required p {
+        font-size: 0.8rem;
+        padding: 0px;
+    }
+
     .form-inputs {
         padding: 30px 0px;
         padding-left: max(20%, 80px);
@@ -311,7 +325,7 @@ div {
     }
 
     legend {
-        margin-bottom: 40px;
+        margin-bottom: 7px;
     }
 
     .form-row {
@@ -324,6 +338,12 @@ div {
 
     .form-column {
         margin-bottom: 30px;
+    }
+
+    .submit-section,
+    .login {
+        padding-left: max(8%, 40px);
+        padding-right: max(8%, 40px);
     }
 }
 
