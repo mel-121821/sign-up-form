@@ -7,12 +7,15 @@
 
     /*_________Color palette pulled from background image___________*/
     --peach: hsla(22, 73%, 74%, 1);
+    --peach-fade: hsla(22, 73%, 99%, 1);
     --night: hsla(147, 24%, 7%, 1);
     --red-orange: hsla(20, 75%, 43%, 1);
+
     --gray: hsla(173, 8%, 54%, 1);
     --gray-fade-light: hsla(173, 8%, 97%, 1);
     --gray-fade-medium: hsla(173, 6%, 80%, 1);
     --gray-darkened: hsla(173, 6%, 40%, 1);
+
     --gray-2: hsla(173, 6%, 51%, 1);
     --gray-2-light: hsla(173, 6%, 90%, 1);
 }
@@ -215,6 +218,12 @@ input[type="password"] {
     width: auto;
 }
 
+input:focus {
+    background-color: hsl(225, 73%, 98%);;
+    outline-color: hsl(225, 73%, 57%);
+    /*use instead of border-color*/
+    border-radius: 5px;
+}
 
 
 
