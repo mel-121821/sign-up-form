@@ -106,3 +106,6 @@ https://html.com/attributes/a-target/#:~:text=browser%20specifies%20otherwise.-,
 
 Common screen sizes:
 https://www.altamira.ai/blog/common-screen-sizes-for-responsive-web-design/
+
+How to change the border-color on an input:focus:
+https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus
