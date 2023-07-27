@@ -70,7 +70,6 @@ https://www.w3docs.com/snippets/css/how-to-change-the-color-of-png-image-using-c
 Measuring the size of an element: 
 https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
 
-
 Problems with CSS width:
 https://stackoverflow.com/questions/14938428/why-would-max-width-not-work-on-this
 
@@ -109,3 +108,6 @@ https://www.altamira.ai/blog/common-screen-sizes-for-responsive-web-design/
 
 How to change the border-color on an input:focus:
 https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus
+
+Common color keywords:
+https://www.w3.org/wiki/CSS/Properties/color/keywords
