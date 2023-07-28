@@ -200,6 +200,7 @@ legend {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    flex-flow: row wrap;
 }
 
 label {
@@ -218,12 +219,39 @@ input[type="password"] {
     width: auto;
 }
 
+input + span {
+    position: relative;
+}
+
+input:required + span::after {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    content: "*";
+    color: red;
+    padding: 5px 10px;
+    top: -20px;
+    left: -25px;
+}
+
+
 input:focus {
-    background-color: hsl(225, 73%, 98%);;
+    background-color: hsl(225, 73%, 98%);
+    /*to change color format in VS code, hover over color square and click the color value at the top of the pop-up color menu*/
     outline-color: hsl(225, 73%, 57%);
-    /*use instead of border-color*/
+    /*border-color does not work in this context, use outline instead*/
     border-radius: 5px;
 }
+
+input:valid {
+    outline-color: limegreen;
+}
+
+input:invalid {
+    outline-color: red;
+}
+
+
 
 
 
