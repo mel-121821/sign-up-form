@@ -201,6 +201,7 @@ legend {
     flex-direction: column;
     margin-bottom: 10px;
     flex-flow: row wrap;
+    /*Needed for positioning of the span, but is causing positioning issues at smaller sizes, need to adjust*/
 }
 
 label {
@@ -219,20 +220,23 @@ input[type="password"] {
     width: auto;
 }
 
+
+
 input + span {
     position: relative;
 }
 
 input:required + span::after {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     content: "*";
     color: red;
     padding: 5px 10px;
     top: -20px;
-    left: -25px;
+    left: -22px;
 }
+
 
 
 input:focus {
@@ -289,9 +293,16 @@ div {
         flex-direction: column; 
         gap: 10px;
     }
+   
 
     label {
         font-size: 0.45rem;
+    }
+
+    .label-wrap label {
+        width: 85%;
+        align-self: flex-end;
+        /*make confirm pwd wrap to second line instead of overlapping with asterisk, align label to flex-end, otherwise there will be a space under the pwd label*/
     }
 
     .form-row {
@@ -299,7 +310,7 @@ div {
     }
 
     .form-column {
-        width: calc(50% - 0.5rem);
+        width: calc(50% - 0.3rem);
     }
 
     input[type="text"],
@@ -375,6 +386,14 @@ div {
 
     .form-column {
         margin-bottom: 30px;
+        flex-flow: nowrap;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+        width: 100%;
     }
 
     .submit-section,
