@@ -200,8 +200,8 @@ legend {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    flex-flow: row wrap;
-    /*Needed for positioning of the span, but is causing positioning issues at smaller sizes, need to adjust*/
+    /*flex-flow: row wrap;
+    Removed as it was causing too many positioning problems, positioned generated content relative to the span below the input instead of moving it beside the label*/
 }
 
 label {
@@ -233,8 +233,8 @@ input:required + span::after {
     content: "*";
     color: red;
     padding: 5px 10px;
-    top: -20px;
-    left: -22px;
+    top: -50px;
+    right: -5px;
 }
 
 
@@ -294,6 +294,13 @@ div {
         gap: 10px;
     }
    
+    .opening-para {
+        margin-top: 30px;
+    }
+    
+    .para-required p {
+        font-size: 0.9rem;
+    }
 
     label {
         font-size: 0.45rem;
@@ -301,8 +308,7 @@ div {
 
     .label-wrap label {
         width: 85%;
-        align-self: flex-end;
-        /*make confirm pwd wrap to second line instead of overlapping with asterisk, align label to flex-end, otherwise there will be a space under the pwd label*/
+        /*make confirm pwd wrap to second line instead of overlapping with asterisk, removed align-self as the space under password has been corrected elsewhere*/
     }
 
     .form-row {
@@ -368,8 +374,8 @@ div {
 
     .form-inputs {
         padding: 30px 0px;
-        padding-left: max(20%, 80px);
-        padding-right: max(20%, 80px);
+        padding-left: max(20%, 50px);
+        padding-right: max(20%, 50px);
     }
 
     legend {
@@ -385,6 +391,8 @@ div {
     }
 
     .form-column {
+        display: block;
+        /*Removed flex to fix layout issue at -650vw that appeared after positioning of generated content*/
         margin-bottom: 30px;
         flex-flow: nowrap;
     }
@@ -394,6 +402,11 @@ div {
     input[type="tel"],
     input[type="password"] {
         width: 100%;
+    }
+
+    input:required + span::after {
+        top: -20px;
+        right: -5px;
     }
 
     .submit-section,
