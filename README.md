@@ -111,3 +111,12 @@ https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-texta
 
 Common color keywords:
 https://www.w3.org/wiki/CSS/Properties/color/keywords
+
+Hiding elements with CSS:
+https://careerkarma.com/blog/css-hide-element/#:~:text=You%20can%20hide%20an%20element,keeping%20the%20space%20the%20same.
+
+JS toggle hide/show:
+https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+JS focusout:
+https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event
