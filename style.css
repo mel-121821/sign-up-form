@@ -255,6 +255,15 @@ input:invalid {
     outline-color: red;
 }
 
+.form-column > p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: var(--gray-darkened);
+    display: none;
+}
+
 
 
 
@@ -303,7 +312,7 @@ div {
     }
 
     label {
-        font-size: 0.45rem;
+        font-size: 0.5rem;
     }
 
     .label-wrap label {
