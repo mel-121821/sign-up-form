@@ -237,7 +237,15 @@ input:required + span::after {
     right: -5px;
 }
 
-
+p > span::after {
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    content:"X";
+    color: darkcyan;
+    margin-right: 10px;
+    
+}
 
 input:focus {
     background-color: hsl(225, 73%, 98%);
@@ -261,7 +269,7 @@ input:invalid {
     margin-top: 5px;
     margin-bottom: 0px;
     color: var(--gray-darkened);
-    display: none;
+    /*display: none;*/
 }
 
 
