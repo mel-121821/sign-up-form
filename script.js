@@ -1,9 +1,20 @@
+
+const inputEmail = document.querySelector('#email');
 const inputPwd1 = document.querySelector('#pwd1');
+const inputPwd2 = document.querySelector('#pwd2');
 
-const reqPwdPara = document.querySelectorAll('.pwd-req')
+const emailPara = document.querySelector('.email-req')
+const reqPwdPara = document.querySelectorAll('.pwd-req');
+const pwdMatch = document.querySelector('.pwd-match');
 
 
+inputEmail.addEventListener('focus', () => {
+    emailPara.style.display = "block";
+})
 
+inputEmail.addEventListener('focusout', () => {
+    emailPara.style.display = "none";
+})
 
 inputPwd1.addEventListener('focus', () => {
     for (pwd of reqPwdPara) {
@@ -17,6 +28,6 @@ inputPwd1.addEventListener('focusout', () => {
     }
 })
 
-
-
-// Adds back paragraphs without proper line breaks, also need to return to display: none when input is not focused
+inputPwd2.addEventListener('focus', () => {
+    pwdMatch.style.display = "block"
+})
