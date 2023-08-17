@@ -120,3 +120,9 @@ https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 JS focusout:
 https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event
+
+Can you select pseudo elements with JS? (Short answer: no):
+https://stackoverflow.com/questions/5041494/selecting-and-manipulating-css-pseudo-elements-such-as-before-and-after-usin#:~:text=Although%20they%20are%20rendered%20by,or%20any%20JavaScript%20APIs%20for
+
+Adding a class with JS:
+https://www.w3schools.com/howto/howto_js_add_class.asp
