@@ -238,13 +238,18 @@ input:required + span::after {
 }
 
 p > span::after {
-    font-size: 0.8rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
-    content:"X";
-    color: darkcyan;
+    content:"✖";
+    color: red;
     margin-right: 10px;
-    
+}
+
+.email-valid::after {
+    content: "✓";
+    font-weight: 700;
+    color: green;
 }
 
 input:focus {
@@ -269,7 +274,7 @@ input:invalid {
     margin-top: 5px;
     margin-bottom: 0px;
     color: var(--gray-darkened);
-    /*display: none;*/
+    display: none;
 }
 
 
