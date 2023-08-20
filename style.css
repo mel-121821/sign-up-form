@@ -246,7 +246,7 @@ p > span::after {
     margin-right: 10px;
 }
 
-.email-valid::after {
+.valid::after {
     content: "✓";
     font-weight: 700;
     color: green;
