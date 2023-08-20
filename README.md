@@ -126,3 +126,12 @@ https://stackoverflow.com/questions/5041494/selecting-and-manipulating-css-pseud
 
 Adding a class with JS:
 https://www.w3schools.com/howto/howto_js_add_class.asp
+
+String.prototype.match():
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+
+Get the value of an input:
+https://www.tabnine.com/academy/javascript/get-value-of-input/
+
+Regex pattern for special characters:
+https://stackoverflow.com/questions/18057962/regex-pattern-including-all-special-characters
