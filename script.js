@@ -16,7 +16,6 @@ const pwdSpanNum = document.querySelector('.req-num > span');
 const pwdSpanChar = document.querySelector('.req-char > span');
 
 // Regex Patterns
-const regExLetter = /[a-zA-z]/g;
 const regExNum = /[0-9]/g;
 const regExChar = /[!-\/:-@[-`{-~]/g
 
@@ -62,10 +61,8 @@ inputPwd1.addEventListener('focusout', () => {
 
 inputPwd1.addEventListener('input', (e) => {
     let pwdVal = document.querySelector('#pwd1').value;
-    console.log(pwdVal);
-    if(pwdVal.match(regExLetter)) {
+    if(pwdVal.length >= 8) {
         pwdSpanLength.classList.add('valid');
-        console.log('valid')
     } else {
         pwdSpanLength.classList.remove('valid');
     }
@@ -73,10 +70,8 @@ inputPwd1.addEventListener('input', (e) => {
 
 inputPwd1.addEventListener('input', (e) => {
     let pwdVal = document.querySelector('#pwd1').value;
-    console.log(pwdVal);
     if(pwdVal.match(regExNum)) {
         pwdSpanNum.classList.add('valid');
-        console.log('valid')
     } else {
         pwdSpanNum.classList.remove('valid');
     }
@@ -84,10 +79,8 @@ inputPwd1.addEventListener('input', (e) => {
 
 inputPwd1.addEventListener('input', (e) => {
     let pwdVal = document.querySelector('#pwd1').value;
-    console.log(pwdVal);
     if(pwdVal.match(regExChar)) {
         pwdSpanChar.classList.add('valid');
-        console.log('valid')
     } else {
         pwdSpanChar.classList.remove('valid');
     }
