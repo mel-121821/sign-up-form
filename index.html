@@ -61,7 +61,7 @@
                         <div class="form-row label-wrap">
                             <div class="form-column">
                                 <label for="pwd1">PASSWORD:</label>
-                                <input type="password" id="pwd1" name="pwd1" required minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*)(?=.*[a-z]).*$">
+                                <input type="text" onkeyup="checkPasswords()" id="pwd1" name="pwd1" required minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*)(?=.*[a-z]).*$">
                                 <span></span>
                                 <p class="pwd-req req-length"><span></span>Minimum 8 characters</p>
                                 <p class="pwd-req req-num"><span></span>At least one number</p>
@@ -69,9 +69,9 @@
                             </div>
                             <div class="form-column">
                             <label for="pwd2">CONFIRM PASSWORD:</label>
-                            <input type="password" id="pwd2" name="pwd2" required>
+                            <input type="text" onkeyup="checkPasswords()" id="pwd2" name="pwd2" required>
                             <span></span>
-                            <p class="pwd-match"><span></span>Passwords do not match</p>
+                            <p class="pwd-match"><span></span></p>
                             </div>
                         </div>
                     </div>
