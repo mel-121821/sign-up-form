@@ -37,14 +37,11 @@ inputEmail.addEventListener('focusout', () => {
 inputEmail.addEventListener('input', (event)=> {
     if(inputEmail.validity.valid) {
         emailSpan.classList.add('valid'); 
-        console.log("Valid");
     } else {
         emailSpan.classList.remove('valid')
-        console.log("Not valid")
     }
     
 })
-
 
 
 
@@ -87,10 +84,18 @@ inputPwd1.addEventListener('input', (e) => {
     }
 })
 
+
+
 inputPwd2.addEventListener('focus', () => {
     pwdMatchPara.style.display = "block"
     
 })
+
+inputPwd2.addEventListener('focusout', () => {
+    pwdMatchPara.style.display = "none"
+    
+})
+
 
 let paraVal = document.createTextNode("")
     pwdMatchPara.appendChild(paraVal);
