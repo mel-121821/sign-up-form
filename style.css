@@ -134,7 +134,9 @@ img {
 .footer div {
     text-align: center;
     color: var(--pale-yellow-transparent);
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    font-family: pokemon-classic, sans-serif;
 }
 
 .footer a {
