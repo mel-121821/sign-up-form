@@ -7,13 +7,14 @@ const inputPwd2 = document.querySelector('#pwd2');
 // Paragraphs 
 const emailPara = document.querySelector('.email-req')
 const reqPwdPara = document.querySelectorAll('.pwd-req');
-const pwdMatch = document.querySelector('.pwd-match');
+const pwdMatchPara = document.querySelector('.pwd-match');
 
 // Spans
 const emailSpan = document.querySelector('.email-req > span');
 const pwdSpanLength = document.querySelector('.req-length > span');
 const pwdSpanNum = document.querySelector('.req-num > span');
 const pwdSpanChar = document.querySelector('.req-char > span');
+const pwdSpanMatch = document.querySelector('.pwd-match > span');
 
 // Regex Patterns
 const regExNum = /[0-9]/g;
@@ -87,5 +88,55 @@ inputPwd1.addEventListener('input', (e) => {
 })
 
 inputPwd2.addEventListener('focus', () => {
-    pwdMatch.style.display = "block"
+    pwdMatchPara.style.display = "block"
+    
 })
+
+let paraVal = document.createTextNode("")
+    pwdMatchPara.appendChild(paraVal);
+
+function checkPasswords() {
+    let pwd1 = document.getElementById('pwd1').value;
+    let pwd2 = document.getElementById('pwd2').value;
+    if(pwd1 === pwd2) {
+        pwdSpanMatch.classList.add('valid');
+        paraVal.textContent = "";
+        paraVal.textContent = "Passwords match";
+    } else {
+        pwdSpanMatch.classList.remove('valid');
+        paraVal.textContent = "";
+        paraVal.textContent = "Passwords do not match";
+    }        
+} 
+
+
+
+//inputPwd2.addEventListener('input', (e) => {
+    //let pwdVal1 = document.getElementById('pwd1').value;
+    //console.log(pwdVal1);
+    //let pwdVal2 = document.querySelector('pwd2').value;
+    //if(pwdVal1 === pwdVal2) {
+        //pwdSpanMatch.classList.add('valid');
+    //} else {
+        //pwdSpanMatch.classList.remove('valid');
+    //}
+//})
+
+//if (pwdMatchPara.hasChildNodes) {
+  //  console.log(pwdMatchPara.hasChildNodes);
+    //pwdMatchPara.removeChild(pwdMatchPara.secondChild);
+    //pwdMatchPara.appendChild(paraVal1);
+//} else {
+  //  pwdMatchPara.appendChild(paraVal1);
+//}
+//pwdMatchPara.textContent = "Passwords match";
+//} else {
+//pwdSpanMatch.classList.remove('valid');
+//let paraVal2 = document.createTextNode("Passwords do /not match");
+//if (pwdMatchPara.hasChildNodes) {
+  //  console.log(pwdMatchPara.hasChildNodes)
+    //pwdMatchPara.removeChild(pwdMatchPara.secondChild);
+    //pwdMatchPara.appendChild(paraVal2);
+//} else {
+  //  pwdMatchPara.appendChild(paraVal2);
+//}
