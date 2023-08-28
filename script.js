@@ -97,7 +97,7 @@ inputPwd2.addEventListener('focusout', () => {
 })
 
 
-let paraVal = document.createTextNode("")
+let paraVal = document.createTextNode("Passwords do not match");
     pwdMatchPara.appendChild(paraVal);
 
 function checkPasswords() {
