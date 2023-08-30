@@ -136,9 +136,11 @@ https://www.tabnine.com/academy/javascript/get-value-of-input/
 Regex pattern for special characters:
 https://stackoverflow.com/questions/18057962/regex-pattern-including-all-special-characters
 
-
 How to check if passwords match (See "onkeyup" event):
 https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page
 
 Adding a text node with JS:
 https://stackoverflow.com/questions/41764061/adding-text-to-an-existing-text-element-in-javascript-via-dom
+
+Disabling spellcheck from user inputs:
+https://www.geeksforgeeks.org/how-to-disable-spell-checking-from-input-box-and-textarea-in-html-forms/
