@@ -98,17 +98,21 @@ inputPwd2.addEventListener('focusout', () => {
 
 
 let paraVal = document.createTextNode("Passwords do not match");
-    pwdMatchPara.appendChild(paraVal);
+pwdMatchPara.appendChild(paraVal);
 
 function checkPasswords() {
     let pwd1 = document.getElementById('pwd1').value;
     let pwd2 = document.getElementById('pwd2').value;
     if(pwd1 === pwd2) {
         pwdSpanMatch.classList.add('valid');
+        inputPwd2.classList.add('valid');
+        inputPwd2.classList.remove('invalid')
         paraVal.textContent = "";
         paraVal.textContent = "Passwords match";
     } else {
         pwdSpanMatch.classList.remove('valid');
+        inputPwd2.classList.add('invalid');
+        inputPwd2.classList.remove('valid');
         paraVal.textContent = "";
         paraVal.textContent = "Passwords do not match";
     }        
