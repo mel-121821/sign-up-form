@@ -49,7 +49,7 @@
                         <div class="form-row">
                             <div class="form-column">
                                 <label for="email">EMAIL:</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" required autocomplete="off">
                                 <span></span>
                                 <p class="email-req"><span></span>Please enter a valid email</p>
                             </div>
@@ -68,10 +68,10 @@
                                 <p class="pwd-req req-char"><span></span>At least one special character</p>
                             </div>
                             <div class="form-column">
-                            <label for="pwd2">CONFIRM PASSWORD:</label>
-                            <input type="password" onkeyup="checkPasswords()" id="pwd2" name="pwd2" required autocomplete="off">
-                            <span></span>
-                            <p class="pwd-match"><span></span></p>
+                                <label for="pwd2">CONFIRM PASSWORD:</label>
+                                <input type="password" onkeyup="checkPasswords()" id="pwd2" name="pwd2" required autocomplete="off">
+                                <span></span>
+                                <p class="pwd-match"><span></span></p>
                             </div>
                         </div>
                     </div>
