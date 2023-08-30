@@ -261,13 +261,28 @@ input:focus {
     border-radius: 5px;
 }
 
-input:valid {
+input:focus {
+    outline-color: blue;
+}
+
+input[type="email"]:valid,
+input[type="password"]#pwd1:valid {
     outline-color: limegreen;
 }
 
 input:invalid {
     outline-color: red;
 }
+
+input.valid {
+    outline-color: limegreen;
+}
+
+input.invalid {
+    outline-color: red;
+}
+
+
 
 .form-column > p {
     font-size: 0.8rem;
