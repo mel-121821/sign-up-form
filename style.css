@@ -7,7 +7,7 @@
 
     /*_________Color palette pulled from background image___________*/
     --peach: hsla(22, 73%, 74%, 1);
-    --peach-fade: hsla(22, 73%, 99%, 1);
+    --peach-fade: hsla(22, 73%, 85%, 1);
     --night: hsla(147, 24%, 7%, 1);
     --red-orange: hsla(20, 75%, 43%, 1);
 
@@ -217,7 +217,12 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"] {
+    /*font-family: pokemon-classic, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: -0.05rem;*/
     border: 1px solid var(--gray-fade-medium);
+    border-radius: 6px;
+    box-shadow: inset 1px 1px 3px var(--gray-fade-medium);
     padding: 5px;
     width: auto;
     color: var(--gray-darkened)
@@ -255,14 +260,12 @@ p > span::after {
 
 input:focus {
     background-color: hsl(225, 73%, 98%);
+    box-shadow: none;
+    color: black;
     /*to change color format in VS code, hover over color square and click the color value at the top of the pop-up color menu*/
-    outline-color: hsl(225, 73%, 57%);
+    outline-color: hsl(225, 85%, 73%);
     /*border-color does not work in this context, use outline instead*/
     border-radius: 5px;
-}
-
-input:focus {
-    outline-color: blue;
 }
 
 input[type="email"]:valid,
