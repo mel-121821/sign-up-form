@@ -69,7 +69,7 @@
                             </div>
                             <div class="form-column">
                                 <label for="pwd2">CONFIRM PASSWORD:</label>
-                                <input type="password" onkeyup="checkPasswords()" id="pwd2" name="pwd2" required autocomplete="off">
+                                <input type="password" onkeyup="checkPasswords()" id="pwd2" name="pwd2" required autocomplete="off" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*)(?=.*[a-z]).*$">
                                 <span></span>
                                 <p class="pwd-match"><span></span></p>
                             </div>
