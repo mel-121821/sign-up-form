@@ -144,3 +144,6 @@ https://stackoverflow.com/questions/41764061/adding-text-to-an-existing-text-ele
 
 Disabling spellcheck from user inputs:
 https://www.geeksforgeeks.org/how-to-disable-spell-checking-from-input-box-and-textarea-in-html-forms/
+
+Is it a bad idea to add the same class twice with JS? (Short answer: no):
+https://stackoverflow.com/questions/51214589/is-there-any-harm-in-adding-a-class-to-an-element-that-already-has-that-class-us
