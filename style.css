@@ -28,8 +28,15 @@
 }
 
 @font-face {
-    font-family: pokemon-hollow;
+    font-family: pokemon-solid;
     src: url('fonts/pokemon/pokemon-solid.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: pokemon-hollow;
+    src: url('fonts/pokemon/pokemon-hollow.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -106,9 +113,9 @@ img {
 }
 
 .title h1 {
-    font-family: 'pokemon-hollow', sans-serif;
+    font-family: 'pokemon-solid', sans-serif;
     -webkit-text-fill-color: var(--pale-yellow);
-    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke: 2.4px;
     font-size: max(calc(1.2rem + 1vw), 1.2rem);
     color: black;
     letter-spacing: 0.15em;
@@ -167,9 +174,9 @@ p {
 
 .form-inputs {
     background-color: var(--gray-fade-light);
-    border-top: 1px solid var(--gray-fade-medium);
-    border-bottom: 1px solid var(--gray-fade-medium);
-    box-shadow: 0px 1px 2px 1px var(--gray-fade-medium);
+    border-top: 1px solid var(--peach);
+    border-bottom: 1px solid var(--peach-fade);
+    box-shadow: 0px 1px 2px 1px var(--peach-fade);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     color: var(--night);
     padding: 10px 30px;
@@ -178,8 +185,13 @@ p {
 
 legend {
     margin: 20px 0px 3px 0px;
-    font-size: max(calc(0.7rem + 0.7vw), 1.5rem);
+    font-size: max(calc(0.8rem + 0.7vw), 1.5rem);
     font-weight: 600;
+    font-family: 'pokemon-solid', sans-serif;
+    -webkit-text-fill-color: var(--pale-yellow);
+    -webkit-text-stroke: 2.2px;
+    color: black;
+    letter-spacing: 0.17em;
     
 }
 
@@ -211,6 +223,7 @@ label {
     font-weight: 600;
     color: var(--gray-darkened);
     margin-bottom: 4px;
+    cursor: pointer;
 }
 
 input[type="text"],
@@ -225,7 +238,8 @@ input[type="password"] {
     box-shadow: inset 1px 1px 3px var(--gray-fade-medium);
     padding: 5px;
     width: auto;
-    color: var(--gray-darkened)
+    color: var(--gray-darkened);
+    cursor: pointer;
 }
 
 
@@ -259,7 +273,7 @@ p > span::after {
 }
 
 input:focus {
-    background-color: hsl(225, 73%, 98%);
+    background-color: white;
     box-shadow: none;
     color: black;
     /*to change color format in VS code, hover over color square and click the color value at the top of the pop-up color menu*/
@@ -296,7 +310,22 @@ input.invalid {
     display: none;
 }
 
-
+button {
+    font-family: 'pokemon-solid', sans-serif;
+    -webkit-text-fill-color: var(--pale-yellow);
+    -webkit-text-stroke: 2px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    padding: 8px 30px 1px 31px;
+    border: 2px solid var(--night);
+    border-radius: 6px;
+    box-shadow: inset 2px 2px 10px var(--peach);
+    background-color: var(--red-orange);
+    color: var(--night);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
 
 
 
