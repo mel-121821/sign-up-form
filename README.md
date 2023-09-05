@@ -147,3 +147,9 @@ https://www.geeksforgeeks.org/how-to-disable-spell-checking-from-input-box-and-t
 
 Is it a bad idea to add the same class twice with JS? (Short answer: no):
 https://stackoverflow.com/questions/51214589/is-there-any-harm-in-adding-a-class-to-an-element-that-already-has-that-class-us
+
+How to add box-shadow to all sides of a button:
+https://stackoverflow.com/questions/5608222/how-to-apply-box-shadow-on-all-four-sides
+
+Button style example (used Button 63):
+https://getcssscan.com/css-buttons-examples
