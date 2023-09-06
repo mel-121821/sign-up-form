@@ -545,10 +545,15 @@ div {
         right: -5px;
     }
 
+    .form-column > p {
+        margin-top: -4px;
+        margin-bottom: -15px;
+    }
+
     .submit-section,
     .login {
-        padding-left: max(8%, 40px);
-        padding-right: max(8%, 40px);
+        padding-left: max(20%, 50px);
+        padding-right: max(20%, 50px);
     }
 }
 
