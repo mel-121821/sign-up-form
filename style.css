@@ -212,13 +212,14 @@ legend {
     margin-bottom: 20px;
     display: flex;
     justify-content: left;
-    gap: 60px;
+    gap: 10%;
 }
 
 .form-column {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    width: 37%;
     /*flex-flow: row wrap;
     Removed as it was causing too many positioning problems, positioned generated content relative to the span below the input instead of moving it beside the label*/
 }
@@ -239,6 +240,7 @@ input[type="password"] {
     /*font-family: pokemon-classic, sans-serif;
     font-size: 0.7rem;
     letter-spacing: -0.05rem;*/
+    font-size: 0.9rem;
     border: 1px solid var(--gray-fade-medium);
     border-radius: 6px;
     box-shadow: inset 1px 1px 3px var(--gray-fade-medium);
@@ -531,6 +533,7 @@ div {
         /*Removed flex to fix layout issue at -650vw that appeared after positioning of generated content*/
         margin-bottom: 30px;
         flex-flow: nowrap;
+        width: 100%;
     }
 
     input[type="text"],
@@ -554,6 +557,14 @@ div {
     .login {
         padding-left: max(20%, 50px);
         padding-right: max(20%, 50px);
+    }
+
+    .submit-section {
+        margin-bottom: 20px;
+    }
+
+    .login {
+        margin-bottom: 50px;
     }
 }
 
