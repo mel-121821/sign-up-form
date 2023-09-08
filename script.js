@@ -22,10 +22,10 @@ const regExChar = /[!-\/:-@[-`{-~]/g
 
 
 
-
 //__________________________________________________
 
 
+// Email Input Functions
 inputEmail.addEventListener('focus', () => {
     emailPara.style.display = "block";
 })
@@ -39,12 +39,11 @@ inputEmail.addEventListener('input', (event)=> {
         emailSpan.classList.add('valid'); 
     } else {
         emailSpan.classList.remove('valid')
-    }
-    
+    }  
 })
 
 
-
+// Pwd1 Input Functions
 inputPwd1.addEventListener('focus', () => {
     for (pwd of reqPwdPara) {
         pwd.style.display = "block"; 
@@ -85,17 +84,14 @@ inputPwd1.addEventListener('input', (e) => {
 })
 
 
-
+// Pwd2 Input Functions
 inputPwd2.addEventListener('focus', () => {
-    pwdMatchPara.style.display = "block"
-    
+    pwdMatchPara.style.display = "block"    
 })
 
 inputPwd2.addEventListener('focusout', () => {
-    pwdMatchPara.style.display = "none"
-    
+    pwdMatchPara.style.display = "none"    
 })
-
 
 let paraVal = document.createTextNode("Passwords do not match");
 pwdMatchPara.appendChild(paraVal);
@@ -118,38 +114,6 @@ function checkPasswords() {
             inputPwd2.classList.remove('valid');
             paraVal.textContent = "";
             paraVal.textContent = "Passwords do not match";
-    }        
-} 
+        }        
+    } 
 }
-
-
-
-//inputPwd2.addEventListener('input', (e) => {
-    //let pwdVal1 = document.getElementById('pwd1').value;
-    //console.log(pwdVal1);
-    //let pwdVal2 = document.querySelector('pwd2').value;
-    //if(pwdVal1 === pwdVal2) {
-        //pwdSpanMatch.classList.add('valid');
-    //} else {
-        //pwdSpanMatch.classList.remove('valid');
-    //}
-//})
-
-//if (pwdMatchPara.hasChildNodes) {
-  //  console.log(pwdMatchPara.hasChildNodes);
-    //pwdMatchPara.removeChild(pwdMatchPara.secondChild);
-    //pwdMatchPara.appendChild(paraVal1);
-//} else {
-  //  pwdMatchPara.appendChild(paraVal1);
-//}
-//pwdMatchPara.textContent = "Passwords match";
-//} else {
-//pwdSpanMatch.classList.remove('valid');
-//let paraVal2 = document.createTextNode("Passwords do /not match");
-//if (pwdMatchPara.hasChildNodes) {
-  //  console.log(pwdMatchPara.hasChildNodes)
-    //pwdMatchPara.removeChild(pwdMatchPara.secondChild);
-    //pwdMatchPara.appendChild(paraVal2);
-//} else {
-  //  pwdMatchPara.appendChild(paraVal2);
-//}
